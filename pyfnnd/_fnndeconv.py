@@ -1,6 +1,6 @@
 from __future__ import print_function, absolute_import
-import six
-if six.PY2:
+import sys
+if sys.version_info[0] < 3:
     from future_builtins import zip
 import numpy as np
 from scipy import signal
